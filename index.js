@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { PropTypes } from 'react'
+import React from 'react'
 import {
   Text,
   TouchableOpacity,
@@ -12,19 +12,6 @@ import {
 import BaseComponent from './BaseComponent'
 import Styles from './styles'
 
-const propTypes = {
-    options: React.PropTypes.array.isRequired,
-    selectedOptions: React.PropTypes.array,
-    maxSelectedOptions: React.PropTypes.number,
-    onSelection: React.PropTypes.func,
-    renderIndicator: React.PropTypes.func,
-    renderSeparator: React.PropTypes.func,
-    renderRow: React.PropTypes.func,
-    renderText: React.PropTypes.func,
-    style: View.propTypes.style,
-    optionStyle: View.propTypes.style,
-    disabled: PropTypes.bool
-};
 const defaultProps = {
     options: [],
     selectedOptions: [],
@@ -166,6 +153,7 @@ class MultipleChoice extends BaseComponent {
     render() {
         return (
             <ListView
+                horizontal
                 style={[Styles.list, this.props.style]}
                 dataSource={this.state.dataSource}
                 renderRow={this._renderRow}
@@ -174,7 +162,6 @@ class MultipleChoice extends BaseComponent {
     }
 };
 
-MultipleChoice.propTypes = propTypes;
 MultipleChoice.defaultProps = defaultProps;
 
 module.exports = MultipleChoice;

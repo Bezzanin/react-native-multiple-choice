@@ -1,7 +1,7 @@
 {
-  "name": "react-native-multiple-choice",
+  "name": "ft-react-native-multiple-choice",
   "version": "0.0.8",
-  "description": "A cross-platform (iOS / Android) single and multiple-choice React Native component.",
+  "description": "A Horizontal Fix for: A cross-platform (iOS / Android) single and multiple-choice React Native component.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
