@@ -13,8 +13,6 @@ export default React.StyleSheet.create({
     },
 
     optionIndicator: {
-        width: 40,
-        height: 30,
         justifyContent: 'center',
         alignItems: 'center'
     },
